@@ -1,0 +1,76 @@
+/* Reset Styles */
+
+/* Box Model */
+* {
+  box-sizing: border-box; /* Makes sizing easier and more predictable */
+}
+
+/* Typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* A good default sans-serif font */
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+a {
+  color: #007bff; /* A standard blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Reset List Styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset Block-level and Inline box Model */
+body, h1, h2, h3, h4, h5, h6,
+input, button, select, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Styling (optional - improves form appearance) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Button Styling (optional - provides a basic button style) */
+button, input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/*  Other Reset Styles can be added here, for example: */
+/*
+* {
+    font-size: 100%;
+    -webkit-font-smoothing: -webkit-auto;
+    -moz-osx-font-smoothing: grayscale;
+}
+*/

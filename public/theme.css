@@ -1,0 +1,80 @@
+/* Dan Blaax Website Theme - Black, Gold, White */
+
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif; /* Clean, readable font */
+  background-color: #1a1a1a; /* Dark Black Background */
+  color: #eee; /* Light Grey Text - Adjust as needed */
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  letter-spacing: 0.75pt;
+}
+
+/* Primary Heading */
+h1 {
+  font-size: 3em;
+  color: #ffd700; /* Gold */
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+/* Secondary Heading */
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    font-weight: 200;
+}
+
+/* Links */
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffc107; /* Slightly lighter gold for hover effect */
+  text-decoration: underline;
+}
+
+
+/* Background Elements */
+.gold-background {
+  background-color: #ffd700;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.white-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+/* Subtle Gold Accent */
+.gold-accent {
+  color: #d4af37; /* Slightly darker gold */
+}
+
+/* Example: Section Divider */
+.section-divider {
+  background: #1a1a1a; /* Dark Background for the Divider */
+  height: 1px;
+  margin: 2em 0;
+}
+
+
+/*  Responsive Adjustments - Optional, but recommended */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "danblaax-v2",
+  "version": "1.0.0",
+  "description": "V2 of Danblaax.com",
+  "license": "MIT",
+  "author": "Paul Jensen",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.5"
+  },
+  "devDependencies": {}
+}
