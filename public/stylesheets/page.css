@@ -289,7 +289,6 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 15px;
-    max-width: 500px;
 }
 
 section {
