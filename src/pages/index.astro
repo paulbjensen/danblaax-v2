@@ -1,3 +1,11 @@
+---
+import SocialLink from "../components/SocialLink.astro"
+import socialLinks from "../data/social-links.json";
+import clients from "../data/clients.json";
+import testimonials from "../data/testimonials.json";
+import photos from "../data/photos.json";
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,10 +51,9 @@
             <div class="container">
                 <h2>Photo gallery</h2>
                 <div class="photo-gallery">
-                    <img src="/images/gallery/dan-1.jpg" alt="Dan Blaax performing 1" />
-                    <img src="/images/gallery/dan-2.webp" alt="Dan Blaax performing 2" />
-                    <img src="/images/gallery/dan-3.webp" alt="Dan Blaax performing 3" />
-                    <img src="/images/gallery/dan-4.webp" alt="Dan Blaax performing 4" />
+                    {photos.map(photo => (
+                      <img src={photo.url} alt={photo.alt} />
+                    ))}
                 </div>
             </div>
         </section>
@@ -54,33 +61,22 @@
             <div class="container">
                 <h2>Clients</h2>
                 <div class="client-logos">
-                    <img src="/images/clients/f1.png" alt="F1" />
-                    <img src="/images/clients/ministry-of-sound.png" alt="Ministry of Sound" />
-                    <img src="/images/clients/red-bull.png" alt="Red Bull" />
-                    <img src="/images/clients/la-folie-douce.png" alt="La Folie Douce" />
+                    {clients.map(client => (
+                      <img src={client.logo} alt={client.name} />
+                    ))}
                 </div>
         </section>
         <section>
             <div class="container">
                 <h2>Testimonials</h2>
-                <blockquote>
-                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
-                        everyone on their feet. Highly recommend!"</p>
+                {testimonials.map(testimonial => (
+                  <blockquote>
+                    <p>{testimonial.quote}</p>
                     <citation>- Event Organizer</citation>
-                </blockquote>
-                <blockquote>
-                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
-                        everyone on their feet. Highly recommend!"</p>
-                    <citation>- Event Organizer</citation>
-                </blockquote>
-                <blockquote>
-                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
-                        everyone on their feet. Highly recommend!"</p>
-                    <citation>- Event Organizer</citation>
-                </blockquote>
+                  </blockquote>
+                ))} 
             </div>
         </section>
-
         <section id="book-now">
             <div class="container">
                 <h2>Book now</h2>
@@ -104,24 +100,20 @@
                 <h2>Follow Dan Blaax</h2>
                 <p>Stay updated with Dan's latest performances and news on social media.</p>
                 <div class="social-media">
-                    <a href="https://www.youtube.com/danblaax" target="_blank" rel="noopener noreferrer">YouTube</a>
-                    <a href="https://www.tiktok.com/@danblaax" target="_blank" rel="noopener noreferrer">TikTok</a>
-                    <a href="https://www.instagram.com/danblaax" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://www.facebook.com/profile.php?id=100044256080168" target="_blank"
-                        rel="noopener noreferrer">Facebook</a>
+                    {socialLinks.map(link => (
+                      <SocialLink title={link.label} url={link.href} />
+                    ))}
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div>© 2025 Dan Blaax. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} Dan Blaax. All rights reserved.</div>
         <div class="social-media">
-            <a href="https://www.youtube.com/danblaax" target="_blank" rel="noopener noreferrer">YouTube</a>
-            <a href="https://www.tiktok.com/@danblaax" target="_blank" rel="noopener noreferrer">TikTok</a>
-            <a href="https://www.instagram.com/danblaax" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100044256080168" target="_blank"
-                rel="noopener noreferrer">Facebook</a>
-            <a href="mailto:info@danblaax.com">Email</a>
+            {socialLinks.map(link => (
+              <SocialLink title={link.label} url={link.href} />
+            ))}
+            <SocialLink title="Email" url="mailto:info@danblaax.com" />
         </div>
     </footer>
 </body>
