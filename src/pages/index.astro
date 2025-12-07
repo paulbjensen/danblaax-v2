@@ -1,126 +1,40 @@
 ---
-import SocialLink from "../components/SocialLink.astro"
-import socialLinks from "../data/social-links.json";
-import clients from "../data/clients.json";
-import testimonials from "../data/testimonials.json";
-import photos from "../data/photos.json";
+// Components
+import About from '../components/About.astro';
+import BookNow from '../components/BookNow.astro';
+import Clients from '../components/Clients.astro';
+import FollowOnline from '../components/FollowOnline.astro';
+import Footer from '../components/Footer.astro';
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Photos from '../components/Photos.astro';
+import Testimonials from '../components/Testimonials.astro';
 
-const stylesheets = [
-'/stylesheets/page.css',
-];
+// Data
+import socialLinks from '../data/social-links.json';
+import clients from '../data/clients.json';
+import testimonials from '../data/testimonials.json';
+import photos from '../data/photos.json';
 
+// Stylesheets
+const stylesheets = ['/stylesheets/page.css'];
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Dan Blaax, Saxophonist, Dubai Saxophonist, Live Saxophone, Event Entertainment, Saxophone Performer, Party Saxophonist, Sax Music Dubai, Book Saxophonist, Saxophone Shows">
-    <meta name="description" content="Dan Blaax - The Maverick of the sax world. Dubai-based saxophonist lighting up audiences worldwide with epic sax melodies. Book now!">
-    <title>Dan Blaax</title>
-    {stylesheets.map(href => (
-      <link rel="stylesheet" href={href}>
-    ))}
-</head>
-
-<body>
-    <header>
-        <div id="logo">Dan Blaax</div>
-        <nav>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="container">
-                <h1>The Maverick of the sax world</h1>
-                <div>
-                    <a class="button primary" href="#book-now">Book now</a>
-                </div>
-            </div>
-        </section>
-        <section id="about-dan">
-            <div class="container">
-                <h2>Dan Blaax</h2>
-                <p>Based in Dubai, Dan is a saxophonist who lights up audiences with
-                    epic sax melodies and brings the party to life at events worldwide.
-                </p>
-                <p>
-                    His passion for the Saxophone has taken him to stages all around the world - from the Ministry of
-                    Sound in London to the F1 grand prix in Abu Dhabi.
-                </p>
-            </div>
-        </section>
-        <section id="photos">
-            <div class="container">
-                <h2>Photo gallery</h2>
-                <div class="photo-gallery">
-                    {photos.map(photo => (
-                      <img src={photo.url} alt={photo.alt} />
-                    ))}
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Clients</h2>
-                <div class="client-logos">
-                    {clients.map(client => (
-                      <img src={client.logo} alt={client.name} />
-                    ))}
-                </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Testimonials</h2>
-                {testimonials.map(testimonial => (
-                  <blockquote>
-                    <p>{testimonial.quote}</p>
-                    <citation>- Event Organizer</citation>
-                  </blockquote>
-                ))} 
-            </div>
-        </section>
-        <section id="book-now">
-            <div class="container">
-                <h2>Book now</h2>
-                <p>Include a contact form or email link here</p>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit" class="button primary">Submit</button>
-                </form>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>Follow Dan Blaax</h2>
-                <p>Stay updated with Dan's latest performances and news on social media.</p>
-                <div class="social-media">
-                    {socialLinks.map(link => (
-                      <SocialLink title={link.label} url={link.href} />
-                    ))}
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>© {new Date().getFullYear()} Dan Blaax. All rights reserved.</div>
-        <div class="social-media">
-            {socialLinks.map(link => (
-              <SocialLink title={link.label} url={link.href} />
-            ))}
-            <SocialLink title="Email" url="mailto:info@danblaax.com" />
-        </div>
-    </footer>
-</body>
-
+	<Head stylesheets={stylesheets} />
+	<body>
+		<Header />
+		<main>
+			<Hero />
+			<About />
+			<Photos photos={photos} />
+			<Clients clients={clients} />
+			<Testimonials testimonials={testimonials} />
+			<BookNow />
+			<FollowOnline links={socialLinks} />
+			<Footer links={socialLinks} />
+		</main>
+	</body>
 </html>

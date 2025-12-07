@@ -1,0 +1,15 @@
+---
+import SocialLink from './SocialLink.astro';
+
+const { links } = Astro.props;
+---
+
+<footer>
+	<div>
+		© {new Date().getFullYear()} Dan Blaax. All rights reserved.
+	</div>
+	<div class="social-media">
+		{links.map((link) => <SocialLink title={link.label} url={link.href} />)}
+		<SocialLink title="Email" url="mailto:info@danblaax.com" />
+	</div>
+</footer>

@@ -1,0 +1,22 @@
+---
+import SocialLink from '../components/SocialLink.astro';
+
+const { links } = Astro.props;
+---
+
+<section>
+	<div class="container">
+		<h2>Follow Dan Blaax</h2>
+		<p>
+			Stay updated with Dan's latest performances and news on social
+			media.
+		</p>
+		<div class="social-media">
+			{
+				links.map((link) => (
+					<SocialLink title={link.label} url={link.href} />
+				))
+			}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,12 @@
+---
+const { photos } = Astro.props;
+---
+
+<section id="photos">
+	<div class="container">
+		<h2>Photo gallery</h2>
+		<div class="photo-gallery">
+			{photos.map((photo) => <img src={photo.url} alt={photo.alt} />)}
+		</div>
+	</div>
+</section>

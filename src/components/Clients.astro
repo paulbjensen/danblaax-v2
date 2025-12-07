@@ -1,0 +1,16 @@
+---
+const { clients } = Astro.props;
+---
+
+<section>
+	<div class="container">
+		<h2>Clients</h2>
+		<div class="client-logos">
+			{
+				clients.map((client) => (
+					<img src={client.logo} alt={client.name} />
+				))
+			}
+		</div>
+	</div>
+</section>

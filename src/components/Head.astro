@@ -1,0 +1,18 @@
+---
+const { stylesheets } = Astro.props;
+---
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta
+		name="keywords"
+		content="Dan Blaax, Saxophonist, Dubai Saxophonist, Live Saxophone, Event Entertainment, Saxophone Performer, Party Saxophonist, Sax Music Dubai, Book Saxophonist, Saxophone Shows"
+	/>
+	<meta
+		name="description"
+		content="Dan Blaax - The Maverick of the sax world. Dubai-based saxophonist lighting up audiences worldwide with epic sax melodies. Book now!"
+	/>
+	<title>Dan Blaax</title>
+	{stylesheets.map((href) => <link rel="stylesheet" href={href} />)}
+</head>

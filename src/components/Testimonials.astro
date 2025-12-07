@@ -1,0 +1,17 @@
+---
+const { testimonials } = Astro.props;
+---
+
+<section>
+	<div class="container">
+		<h2>Testimonials</h2>
+		{
+			testimonials.map((testimonial) => (
+				<blockquote>
+					<p>{testimonial.quote}</p>
+					<citation>- Event Organizer</citation>
+				</blockquote>
+			))
+		}
+	</div>
+</section>
