@@ -7,10 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "serve ."
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "serve": "^14.2.5"
-  },
-  "devDependencies": {}
+    "astro": "^5.16.4"
+  }
 }

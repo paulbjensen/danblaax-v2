@@ -88,6 +88,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.5pt;
+    transition: background-color 0.3s ease;
 }
 
 .button.primary:hover {
@@ -109,4 +110,16 @@ blockquote {
     border-left: 4px solid #ffd700;
     margin: 20px 0 80px;
     padding-left: 15px;
+}
+
+.photo-gallery {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }

@@ -1,3 +1,8 @@
+html {
+	scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 footer, section, article, aside, header {
     padding: 8px 16px;
 }
@@ -39,7 +44,7 @@ footer {
 }
 
 #hero {
-    background-image: url('../images/dan-2.webp');
+    background-image: url('../images/gallery/dan-2.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
