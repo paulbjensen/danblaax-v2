@@ -1,0 +1,107 @@
+footer, section, article, aside, header {
+    padding: 8px 16px;
+}
+
+header { 
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    z-index: 1000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1pt;
+    padding: 16px;
+}
+
+#logo {
+    font-size: 18pt;
+    font-weight: 200;
+    letter-spacing: 1.5pt;
+    text-transform: uppercase;
+    color: #ffd700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.social-media > a {
+    margin-right: 15px;
+}
+
+#hero {
+    background-image: url('../images/dan-2.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero h1, #hero p {
+    background-color: rgba(0,0,0,0.6);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#about-dan {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#about-dan p {
+    max-width: 600px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+form {
+    padding: 20px 40px 40px;
+    border: solid 1px #ffd700;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    max-width: 500px;
+}
+
+section {
+        min-height: 100vh;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding: 40px 0;
+}
+
+.client-logos img {
+    max-height: 80px;
+    max-width: 150px;
+    object-fit: contain;
+    filter: grayscale(100%);
+}
+

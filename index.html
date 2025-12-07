@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Dan Blaax</title>
-    <link rel="stylesheet" href="/public/reset.css">
-    <link rel="stylesheet" href="/public/main.css">
-    <link rel="stylesheet" href="/public/theme.css">
+    <link rel="stylesheet" href="/public/stylesheets/reset.css">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <link rel="stylesheet" href="/public/stylesheets/theme.css">
 </head>
 
 <body>
@@ -16,45 +16,93 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="hero">
             <div class="container">
-                <h1>Main heading</h1>
-                <p>Some description here</p>
+                <h1>The Maverick of the sax world</h1>
                 <div>
-                    <a href="#">Get in touch</a>
+                    <a class="button primary" href="#">Book now</a>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="about-dan">
             <div class="container">
-                <h2>What does Dan Blaax do?</h2>
-                <p>Some content here explaining Dan's work, and showcasing it with videos/photos</p>
+                <h2>Dan Blaax</h2>
+                <p>Based in Dubai, Dan is a saxophonist who lights up audiences with
+                    epic sax melodies and brings the party to life at events worldwide.
+                </p>
+                <p>
+                    His passion for the Saxophone has taken him to stages all around the world - from the Ministry of
+                    Sound in London to the F1 grand prix in Abu Dhabi.
+                </p>
+            </div>
         </section>
         <section>
             <div class="container">
                 <h2>Clients</h2>
-                <p>Show a list of logos here, neutral colors, proportionally-sized and well-spaced</p>
+                <div class="client-logos">
+                    <img src="/public/images/burj-al-arab.png" alt="Burj Al Arab" />
+                    <img src="/public/images/f1.png" alt="F1" />
+                    <img src="/public/images/red-bull.png" alt="Red Bull" />
+                </div>
+
         </section>
         <section>
             <div class="container">
                 <h2>Testimonials</h2>
-                <p>Include some testimonals here</p>
+                <blockquote>
+                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
+                        everyone on their feet. Highly recommend!"</p>
+                    <citation>- Event Organizer</citation>
+                </blockquote>
+                <blockquote>
+                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
+                        everyone on their feet. Highly recommend!"</p>
+                    <citation>- Event Organizer</citation>
+                </blockquote>
+                <blockquote>
+                    <p>"Dan Blaax was the highlight of our event! His saxophone performance was electrifying and had
+                        everyone on their feet. Highly recommend!"</p>
+                    <citation>- Event Organizer</citation>
+                </blockquote>
             </div>
         </section>
         <section>
             <div class="container">
-                <h2>Contact Dan Blaax</h2>
+                <h2>Book now</h2>
                 <p>Include a contact form or email link here</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="button primary">Submit</button>
+                </form>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <h2>Follow Dan online</h2>
+                <a href="#">YouTube</a>
+                <a href="#">TikTok</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+
+            </div>
+        </section>
+
     </main>
     <footer>
-        <p>© 2025 Dan Blaax. All rights reserved.</p>
+        <div>© 2025 Dan Blaax. All rights reserved.</div>
         <div class="social-media">
-            <a href="#">YouTube</a>
-            <a href="#">TikTok</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
+            <a href="https://www.youtube.com/danblaax" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="mailto:info@danblaax.com">Email</a>
         </div>
     </footer>
