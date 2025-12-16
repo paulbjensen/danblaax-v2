@@ -1,18 +1,30 @@
 [
     {
-        "url": "/images/gallery/dan-1.jpg",
+        "id": 1,
+        "src": "/images/gallery/dan-1.jpg",
+        "width": 1280,
+        "height": 720,
         "alt": "Dan Blaax performing 1"
     },
     {
-        "url": "/images/gallery/dan-2.webp",
+        "id": 2,
+        "src": "/images/gallery/dan-2.webp",
+        "width": 1000,
+        "height": 666,
         "alt": "Dan Blaax performing 2"
     },
     {
-        "url": "/images/gallery/dan-3.webp",
+        "id": 3,
+        "src": "/images/gallery/dan-3.webp",
+        "width": 1500,
+        "height": 645,
         "alt": "Dan Blaax performing 3"
     },
     {
-        "url": "/images/gallery/dan-4.webp",
+        "id": 4,
+        "width": 1000,
+        "height": 800,
+        "src": "/images/gallery/dan-4.webp",
         "alt": "Dan Blaax performing 4"
     }
 ]

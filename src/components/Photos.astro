@@ -1,12 +1,13 @@
 ---
 const { photos } = Astro.props;
+import Gallery from './Gallery.svelte';
 ---
 
 <section id="photos">
 	<div class="container">
 		<h2>Photo gallery</h2>
 		<div class="photo-gallery">
-			{photos.map((photo) => <img src={photo.url} alt={photo.alt} />)}
+			<Gallery slides={photos} client:visible />
 		</div>
 	</div>
 </section>

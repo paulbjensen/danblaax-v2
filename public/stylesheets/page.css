@@ -188,17 +188,8 @@ blockquote {
 }
 
 .photo-gallery {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
 }
-
-.photo-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 /* --- MAIN.CSS --- */
 html {
 	scroll-behavior: smooth;
