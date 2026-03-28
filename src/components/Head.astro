@@ -15,4 +15,6 @@ const { stylesheets } = Astro.props;
     />
     <title>Dan Blaax</title>
     {stylesheets.map((href) => <link rel="stylesheet" href={href} />)}
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" href="/favicon/favicon.ico" />
 </head>
