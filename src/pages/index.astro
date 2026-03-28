@@ -1,40 +1,20 @@
 ---
 // Components
-import About from '../components/About.astro';
-import BookNow from '../components/BookNow.astro';
-import Clients from '../components/Clients.astro';
-import FollowOnline from '../components/FollowOnline.astro';
-import Footer from '../components/Footer.astro';
-import Head from '../components/Head.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Photos from '../components/Photos.astro';
-import Testimonials from '../components/Testimonials.astro';
+import Head from "../components/Head.astro";
+import Hero from "../components/Hero.astro";
 
 // Data
-import socialLinks from '../data/social-links.json';
-import clients from '../data/clients.json';
-import testimonials from '../data/testimonials.json';
-import photos from '../data/photos.json';
 
 // Stylesheets
-const stylesheets = ['/stylesheets/page.css'];
+const stylesheets = ["/stylesheets/page.css"];
 ---
 
 <!doctype html>
 <html lang="en">
-	<Head stylesheets={stylesheets} />
-	<body>
-		<Header />
-		<main>
-			<Hero />
-			<About />
-			<Photos photos={photos} />
-			<Clients clients={clients} />
-			<Testimonials testimonials={testimonials} />
-			<BookNow />
-			<FollowOnline links={socialLinks} />
-			<Footer links={socialLinks} />
-		</main>
-	</body>
+    <Head stylesheets={stylesheets} />
+    <body>
+        <main>
+            <Hero mode={"coming-soon"} />
+        </main>
+    </body>
 </html>

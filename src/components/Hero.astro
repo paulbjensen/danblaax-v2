@@ -1,8 +1,19 @@
+---
+const { mode } = Astro.props;
+---
+
 <section id="hero">
-	<div class="container">
-		<h1>The Maverick of the sax world</h1>
-		<div>
-			<a class="button primary" href="#book-now">Book now</a>
-		</div>
-	</div>
+    <div class="container">
+        {mode === "coming-soon" && <h1>New site coming soon</h1>}
+        {mode !== "coming-soon" && <h1>The Maverick of the sax world</h1>}
+        {
+            mode !== "coming-soon" && (
+                <div>
+                    <a class="button primary" href="#book-now">
+                        Book now
+                    </a>
+                </div>
+            )
+        }
+    </div>
 </section>
