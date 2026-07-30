@@ -13,10 +13,10 @@
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "12",
-    "@astrojs/svelte": "^7.2.4",
+    "@astrojs/cloudflare": "14",
+    "@astrojs/svelte": "^9.0.1",
     "@slidy/svelte": "^3.5.3",
-    "astro": "^5.16.4",
+    "astro": "^7.1.6",
     "svelte": "^5.46.0",
     "typescript": "^5.9.3"
   },
