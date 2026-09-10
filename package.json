@@ -16,7 +16,7 @@
     "@astrojs/cloudflare": "14",
     "@astrojs/svelte": "^9.0.1",
     "@slidy/svelte": "^3.5.3",
-    "astro": "^7.1.6",
+    "astro": "^7.3.2",
     "svelte": "^5.46.0",
     "typescript": "^5.9.3"
   },
